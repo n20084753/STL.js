@@ -5,7 +5,7 @@ export default class LinkedList {
         this.length = 0;
     }
 
-    _addOneItemToHead(data) {
+    addOneItemToHead(data) {
         const node = { data };
         node.next = this.head;
         this.head = node;
@@ -15,7 +15,7 @@ export default class LinkedList {
         this.length = this.length + 1;
     }
 
-    _addOneItemToTail(data) {
+    addOneItemToTail(data) {
         const node = { data, next: null };
 
         if (this.head === null) {
@@ -47,8 +47,8 @@ export default class LinkedList {
      * Add new nodes to the head
      * @param {any} data
      */
-    addToHead(...data) {
-        data.forEach(item => this._addOneItemToHead(item));
+    push(...data) {
+        data.forEach(item => this.addOneItemToHead(item));
         return this;
     }
 
@@ -56,15 +56,15 @@ export default class LinkedList {
      * Add new nodes to the tail
      * @param {any} data
      */
-    addToTail(...data) {
-        data.forEach(item => this._addOneItemToTail(item));
+    pushBack(...data) {
+        data.forEach(item => this.addOneItemToTail(item));
         return this;
     }
 
     /**
      * Remove the node from the head
      */
-    removeFromHead() {
+    pop() {
         if (this.head === null) {
             return this;
         }
@@ -84,7 +84,7 @@ export default class LinkedList {
     /**
      * Remove the node from the tail
      */
-    removeFromTail() {
+    popBack() {
         if (this.tail === null) {
             return this;
         }

@@ -25,10 +25,10 @@ npm run build
 ## The data structures in STL.js
 
 ### Linked List
-* addToHead
-* addToTail
-* removeFromHead
-* removeFromTail
+* push
+* pushBack
+* pop
+* popBack
 * begin
 * end
 * size
@@ -39,5 +39,25 @@ npm run build
 ### Stack
 * push
 * pop
+* peek
 * size
 * empty
+
+### Queue
+* enqueue
+* dequeue
+* size
+* empty
+
+### Set
+* add
+* remove
+* has
+* clear
+* empty
+* toArray
+* union
+* intersection
+* difference
+* isSubset
+

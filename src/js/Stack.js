@@ -21,6 +21,10 @@ export default class Stack {
         return data;
     }
 
+    peek() {
+        return this.top;
+    }
+
     empty() {
         return this.list.empty();
     }

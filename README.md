@@ -61,3 +61,28 @@ npm run build
 * difference
 * isSubset
 
+### Dictionary
+* set
+* get
+* remove
+* hasKey
+* size
+* isEmpty
+* clear
+* keys
+* values
+* keyValues
+* toStirng
+
+### HashTable
+* put
+* get
+* remove
+* hashCode
+* size
+* isEmpty
+* clear
+* toStirng
+
+
+

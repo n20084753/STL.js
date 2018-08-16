@@ -1,6 +1,37 @@
 import Stack from './Stack';
 import Queue from './Queue';
 import Set from './Set';
+import Dictionary from './Dictionary';
+import HashTable from './HashTable';
+
+// test HashTable
+const hash = new HashTable();
+hash.put('jake', 'jake@email.com');
+hash.put('jaime', 'jaime@email.com');
+hash.put('nathan', 'nathan@email.com');
+console.log(hash.toString());
+hash.remove('nathan');
+console.log(hash.toString());
+console.log(hash.get('jake'));
+
+// test Disctionary
+const dict = new Dictionary();
+dict.set('jake', 'jake@email.com');
+dict.set('jaime', 'jaime@email.com');
+dict.set('nathan', 'nathan@email.com');
+
+console.log(dict.hasKey('ra'));
+console.log(dict.size());
+console.log(dict.keys());
+console.log(dict.values());
+console.log(dict.keyValues());
+console.log(dict.get('vj'));
+
+dict.forEach((k, v) => {
+    console.log('for Each: ', `key: ${k}, value: ${v}`);
+});
+
+console.log(dict.toString());
 
 // test set
 const setA = new Set();

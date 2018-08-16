@@ -16,7 +16,7 @@ export default class HashTable {
         for (let i = 0; i < tableKey.length; i++) {
             hash = (hash * 33) + tableKey.charCodeAt(i);
         }
-        return hash % 10;
+        return hash % 1013;
     }
 
     put(key, value) {

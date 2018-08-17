@@ -107,6 +107,28 @@ export default class LinkedList {
         return this;
     }
 
+    remove(data) {
+        let current = this.head;
+        let prev = this.head;
+        while (current) {
+            if (current.data === data) {
+                if (current === this.head) {
+                    this.pop();
+                } else if (current === this.tail) {
+                    this.popBack();
+                } else {
+                    prev.next = current.next;
+                    this.length = this.length - 1;
+                }
+                return true;
+            }
+            prev = current;
+            current = current.next;
+        }
+
+        return false;
+    }
+
     /**
      * Find element in the list
      * @param {any} check

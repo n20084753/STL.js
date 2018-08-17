@@ -20,12 +20,12 @@ dict.set('jake', 'jake@email.com');
 dict.set('jaime', 'jaime@email.com');
 dict.set('nathan', 'nathan@email.com');
 
-console.log(dict.hasKey('ra'));
+console.log(dict.hasKey('jake'));
 console.log(dict.size());
 console.log(dict.keys());
 console.log(dict.values());
 console.log(dict.keyValues());
-console.log(dict.get('vj'));
+console.log(dict.get('nathan'));
 
 dict.forEach((k, v) => {
     console.log('for Each: ', `key: ${k}, value: ${v}`);

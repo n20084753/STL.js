@@ -3,6 +3,35 @@ import Queue from './Queue';
 import Set from './Set';
 import Dictionary from './Dictionary';
 import HashTable from './HashTable';
+import BinarySearchTree from './BinarySearchTree';
+
+// test BinarySearchTree
+const tree = new BinarySearchTree();
+tree.insert(11);
+tree.insert(17);
+tree.insert(15);
+tree.insert(3);
+tree.insert(9);
+tree.insert(8);
+tree.insert(10);
+tree.insert(13);
+tree.insert(12);
+tree.insert(14);
+tree.insert(20);
+tree.insert(25);
+tree.insert(18);
+
+tree.remove(18);
+tree.remove(20);
+tree.remove(17);
+tree.remove(25);
+
+tree.inOrder(key => console.log(key));
+tree.preOrder(key => console.log(key));
+tree.postOrder(key => console.log(key));
+console.log(tree.min());
+console.log(tree.max());
+console.log(tree.search(17));
 
 // test HashTable
 const hash = new HashTable();

@@ -21,3 +21,11 @@ export class ValuePair {
         return `[#${this.key}: ${this.value}]`;
     }
 }
+
+export class Node {
+    constructor(key) {
+        this.key = key;
+        this.left = null;
+        this.right = null;
+    }
+}

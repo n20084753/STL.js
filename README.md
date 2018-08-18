@@ -84,5 +84,13 @@ npm run build
 * clear
 * toStirng
 
-
+### BinarySearchTree
+* insert
+* remove
+* search
+* min
+* max
+* inOrder
+* preOrder
+* postOrder
 

@@ -94,3 +94,13 @@ npm run build
 * preOrder
 * postOrder
 
+### AVLTree
+* insert
+* remove
+* search
+* min
+* max
+* inOrder
+* preOrder
+* postOrder
+

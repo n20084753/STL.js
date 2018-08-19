@@ -4,6 +4,31 @@ import Set from './Set';
 import Dictionary from './Dictionary';
 import HashTable from './HashTable';
 import BinarySearchTree from './BinarySearchTree';
+import AVLTree from './AVLTree';
+
+// test AVL tree
+const avlTree = new AVLTree();
+avlTree.insert(11);
+avlTree.insert(17);
+avlTree.insert(15);
+avlTree.insert(3);
+avlTree.insert(9);
+avlTree.insert(8);
+avlTree.insert(10);
+avlTree.insert(13);
+avlTree.insert(12);
+avlTree.insert(14);
+avlTree.insert(20);
+avlTree.insert(25);
+avlTree.insert(18);
+
+avlTree.remove(18);
+avlTree.remove(20);
+avlTree.remove(17);
+avlTree.remove(25);
+
+avlTree.preOrder(key => console.log(key));
+console.log(avlTree.root);
 
 // test BinarySearchTree
 const tree = new BinarySearchTree();

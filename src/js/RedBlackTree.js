@@ -147,11 +147,5 @@ export default class RedBlackTree extends BinarySearchTree {
             }
         }
         this.root.color = Colors.BLACK;
-    }
-
-    removeNode(node, key) {
-        node = super.removeNode(node, key);
-
-        this.fixTreeProperties(node);
-    }
+    }    
 }

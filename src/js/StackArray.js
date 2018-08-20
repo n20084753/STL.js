@@ -3,7 +3,7 @@ export default class Stack {
         this.list = [];
     }
 
-    push(data) {
+    push(data) {        
         this.list.push(data);
     }
 

@@ -5,6 +5,17 @@ import Dictionary from './Dictionary';
 import HashTable from './HashTable';
 import BinarySearchTree from './BinarySearchTree';
 import AVLTree from './AVLTree';
+import RedBlackTree from './RedBlackTree';
+
+
+const rbTree = new RedBlackTree();
+rbTree.insert(11);
+rbTree.insert(17);
+rbTree.insert(15);
+rbTree.insert(3);
+rbTree.insert(9);
+rbTree.preOrder(key => console.log(key));
+console.log(rbTree.root);
 
 // test AVL tree
 const avlTree = new AVLTree();

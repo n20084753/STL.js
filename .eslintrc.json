@@ -1,9 +1,18 @@
 {
-    "extends": "airbnb-base",
-    "rules": {
-        "indent": [2, 4]
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "env": {
+        "node": true,
+        "jasmine": true
     },
-    "parserOptions": {
-        "ecmaVersion": 6
+    "rules": {
+        "id-length": 0,
+        "indent": [1, 4],
+        "no-console": 0,
+        "no-unused-vars": [1, {
+            "vars": "local",
+            "args": "none"
+        }],
+        "strict": 0
     }
 }

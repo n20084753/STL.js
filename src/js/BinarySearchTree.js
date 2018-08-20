@@ -86,8 +86,8 @@ export default class BinarySearchTree {
 
     preOrderTraverseNode(node, callback) {
         if (node != null) {
-            this.preOrderTraverseNode(node.left, callback);
             callback(node.key);
+            this.preOrderTraverseNode(node.left, callback);            
             this.preOrderTraverseNode(node.right, callback);
         }
     }
